@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import profilePhoto from '../../assets/profile/profilePhoto.jpg';
+// import ProfilePhoto from '../../assets/profile/profilePhoto.jpg';
 import { SearchOutlined } from '@mui/icons-material';
 import { LanguageOutlined } from '@mui/icons-material';
 import { DarkModeOutlined } from '@mui/icons-material';
@@ -39,7 +39,11 @@ export default function Navbar() {
             <ListOutlined className="icon" />
           </div>
           <div className="item">
-            <img src={profilePhoto} alt="" className="avatar" />
+            <img
+              src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt=""
+              className="avatar"
+            />
           </div>
         </div>
       </div>

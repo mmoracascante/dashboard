@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Widget from '../../components/Widget/Widget';
 import Featured from '../../components/Featured/Featured';
 import Chart from '../../components/Chart/Chart';
-import List from '../../components/Table/Table';
+import ListTable from '../../components/Table/Table';
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest transactions</div>
-          <List />
+          <ListTable />
         </div>
       </div>
     </div>
