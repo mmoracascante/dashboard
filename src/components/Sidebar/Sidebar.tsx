@@ -11,14 +11,16 @@ import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   return (
     <div className="Sidebar">
       <div className="top">
-        <span className="logo">dashboard</span>
+        <Link to="/">
+          <span className="logo">dashboard</span>
+        </Link>
       </div>
-      <hr />
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
@@ -29,11 +31,15 @@ export default function Sidebar() {
           <p className="title">LIST</p>
           <li>
             <PersonOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
+            <Link to="/users">
+              |<span>Users</span>
+            </Link>
           </li>
           <li>
             <StoreIcon className="icon" />
-            <span>Products</span>
+            <Link to="/products">
+              <span>Products</span>
+            </Link>
           </li>
           <li>
             <CreditCardIcon className="icon" />
